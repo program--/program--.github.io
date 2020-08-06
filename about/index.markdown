@@ -2,10 +2,30 @@
 layout: default
 title: About
 ---
+<img src="/images/profile.png" style="width: 35%;" class="right" />
+Hi! Welcome to my personal website. My name is **Justin Singh-Mohudpur**. I'm a **Systems Administrator** for the *US Air Force Reserves*, and an undergraduate student at *University of California, Santa Barbara* for **Mathematics** and **Spatial Science**.
 
-This is where you would but a short bio, and/or a description of your site. It also serves as an example of how to set up a standalone page. For example:
+**View my resume [here](../assets/justinsingh_resume.pdf).**
 
-<img src="/images/shakespeare.png" class="right" />
-**William Shakespeare** (26 April 1564 – 23 April 1616) was an English poet and playwright, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the "Bard of Avon". His extant works, including some collaborations, consist of about 38 plays, 154 sonnets, two long narrative poems, and a few other verses, the authorship of some of which is uncertain. His plays have been translated into every major living language and are performed more often than those of any other playwright.
+I have an interest in **cryptography** and have participated in UCSB's Directed Reading Program. You can see my group's presentation on elliptic curve cryptography [here](https://ucsbdrp.weebly.com/2020-posters.html).
 
-Shakespeare was born and brought up in Stratford-upon-Avon. At the age of 18, he married Anne Hathaway—no, not *that* Anne Hathaway—with whom he had three children.
+As a Systems Administrator, I work primarily with *Department of Defense* architecture, and train personnel on, and manage projects, involving:
+<p>
+&emsp;VMware Virtualization Products (ESXi, vCenter, VSAN)<br/>
+&emsp;Cisco and Dell Switching & Routing<br/>
+&emsp;Red Hat Linux<br/>
+&emsp;PowerShell and Bash Scripting<br/>
+&emsp;Next-Generation Firewall Appliances<br/>
+&emsp;McAfee Security Products<br/>
+&emsp;Windows Active Directory Domain Services<br/>
+</p>
+
+I'm also currently working toward, or already have, the following certifications:
+<p>
+&emsp;CompTIA Security+<br/>
+&emsp;VMware VCP-DCV 2020*<br/>
+&emsp;Red Hat Certified Systems Administrator*<br/>
+&emsp;CISSP*<br/>
+</p>
+
+*(Those marked with an asterisk are in-progress)*
