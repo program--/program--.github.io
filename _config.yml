@@ -11,3 +11,4 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 nav:
   - title: About
   - title: Projects
+  - title: Contact
