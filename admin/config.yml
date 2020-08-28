@@ -16,4 +16,5 @@ collections:
         - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
         - {label: "Title", name: "title", widget: "string"} # Title
         - {label: "Date", name: "date", widget: "datetime"} # Date
-        - {label: "External URL", name: "external-url", widget: "string"} # External URL
+        - {label: "External URL", name: "external-url", widget: "string", required: false} # External URL
+        - {label: "Body", name: "body", widget: "markdown"}
