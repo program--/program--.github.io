@@ -9,22 +9,12 @@ media_folder: "images"
 collections:
   - name: "post"
     label: "Post"
-    folder: "post"
+    folder: "content/post"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
         - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
         - {label: "Title", name: "title", widget: "string"} # Title
         - {label: "Date", name: "date", widget: "datetime"} # Date
-        - {label: "External URL", name: "external-url", widget: "string", required: false} # External URL
-        - {label: "Body", name: "body", widget: "markdown"}
-  - name: "project"
-    label: "Project"
-    folder: "projects_files"
-    create: true
-    slug: "{{slug}}"
-    fields:
-        - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-        - {label: "Title", name: "title", widget: "string"} # Title
         - {label: "External URL", name: "external-url", widget: "string", required: false} # External URL
         - {label: "Body", name: "body", widget: "markdown"}
