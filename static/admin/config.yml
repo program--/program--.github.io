@@ -9,7 +9,7 @@ media_folder: "images"
 collections:
   - name: "post"
     label: "Post"
-    folder: "_posts"
+    folder: "post"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -20,7 +20,7 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - name: "project"
     label: "Project"
-    folder: "projects"
+    folder: "projects_files"
     create: true
     slug: "{{slug}}"
     fields:
