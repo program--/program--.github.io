@@ -3,7 +3,7 @@ title: About
 ---
 Hi! Welcome to my personal website. My name is **Justin Singh-Mohudpur**.
 
-{{< image src="static/img/profile.png" alt="Me" position="center" style="border-radius: 25%; width:35%; border: 3px solid #78E2A0; padding: 2px;" >}}
+{{< image src="/img/profile.png" alt="Me" position="center" style="border-radius: 25%; width:35%; border: 3px solid #78E2A0; padding: 2px;" >}}
 
 I'm a **Network and Systems Administrator** for the *US Air Force Reserves*, and an undergraduate student at *University of California, Santa Barbara* for **Mathematics** and **Spatial Science**.
 
