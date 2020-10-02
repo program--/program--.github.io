@@ -70,3 +70,7 @@ paginate = 5
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+      [[languages.en.menu.main]]
+	identifier = "github"
+	name = "GitHub"
+	url = "https://github.com/program--"
