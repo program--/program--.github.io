@@ -46,9 +46,9 @@ I do this fairly primitvely, but it works:
 library(tidyverse)
 
 plan_data <- readxl::read_excel("PLANNER_DATA.xlsx")
-
-plan_date <- data[[2]][2]
-filtered_data <- setNames(data, data[4, ])
+plan_name <- "Planner Name" # Change this, or use colnames(plan_data[[2]][2]) 
+plan_date <- plan_data[[2]][2]
+filtered_data <- setNames(plan_data, plan_data[4, ])
 filtered_data <- filtered_data[-c(1,2,3,4), ]
 # You can filter Buckets/Tasks out by using dplyr::filter()
 #
