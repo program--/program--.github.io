@@ -1,5 +1,5 @@
 ---
-title: Plotting Microsoft Teams Planner data with R
+title: Plotting Microsoft Planner data with R
 date: 2020-10-02T22:36:18.504Z
 ---
 Recently I came across the issue of trying to provide better visual statistics of project tasks. The problem with this was that the tasks were being tracked with Microsoft Planners in Teams using checklists as the primary indicator for task completion within each task in a bucket, like so:
