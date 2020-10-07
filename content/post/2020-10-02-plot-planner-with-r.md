@@ -2,6 +2,8 @@
 title: Plotting Microsoft Planner data with R
 date: 2020-10-02T22:36:18.504Z
 ---
+**Update:** Since I made this post, I started development on a **R** package that aims to make what's in this post extensible and easy to use. You can view it's GitHub repo [here](https://github.com/program--/plannr) or the documentation [here](https://plannr.justinsingh.me).
+
 Recently I came across the issue of trying to provide better visual statistics of project tasks. The problem with this was that the tasks were being tracked with Microsoft Planners in Teams using checklists as the primary indicator for task completion within each task in a bucket, like so:
 
 ![](/img/task1.png)
