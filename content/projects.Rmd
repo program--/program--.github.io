@@ -1,0 +1,29 @@
+---
+title: "Projects"
+output: html_document
+---
+
+***
+
+<details><summary style="font-size: 1.4rem; font-weight: 800; src: url("../fonts/FiraCode-Bold.woff") format("woff");">R Packages</summary>
+
+<div style="margin-left: 50px;">
+
+- ## [plannr](https://plannr.justinsingh.me)
+  A **R** package for interfacing with **Microsoft Planner** data.
+
+</div>
+
+</details>
+
+***
+
+# [R + GIS](https://geog176a.justinsingh.me/geog176a)
+Using libraries from **tidyverse**, **sf**, **and more...**, I performed
+analysis on spatial datasets that covered various topic, such as:
+
+- COVID-19
+- Flood Risk Analysis (Remote Sensing)
+- Point-in-Polygon Analysis
+
+***
