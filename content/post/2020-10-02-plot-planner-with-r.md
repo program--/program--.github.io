@@ -14,7 +14,9 @@ If you're familiar with Planner, then you know that the built-in dashboard doesn
 
 **R** is a programming language primarily used for statistical computing and graphics. I recently became familiar with it in a GIS class I took at UCSB, and decided I would put it to use for displaying *dashboard-like* plots. To do this, there one significant package that will help to accomplish this: `ggplot2`. You can read about it more [here](https://ggplot2.tidyverse.org/), but it's essentially a package that provides *pretty* data visualization.
 
-`ggplot2` is a part of the `tidyverse` package which includes a bunch of other packages for making data organization easier. To install it, all you need to do is run the command `install.packages("tidyverse")` in an R console.
+`ggplot2` is a part of the `tidyverse` package which includes a bunch of other packages for making data organization easier. To install it, all you need to do is run the command `install.packages("tidyverse")` in an R console. Alternatively, you can install the specific packages I'll be using with:
+
+`install.packages(c("ggplot2", "dplyr", "readxl", "stringr")`
 
 ## Getting Planner Data
 
@@ -44,12 +46,12 @@ You might notice that the first 4 rows of the Planner data spreadsheet include s
 
 I do this fairly primitvely, but it works:
 
-```r
+{{< code language="r" expand="Show" collapse="Hide" isCollapsed="false" >}}
 library(tidyverse)
 
-plan_data <- readxl::read_excel("PLANNER_DATA.xlsx")
-plan_name <- "Planner Name" # Change this, or use colnames(plan_data[[2]][2]) 
-plan_date <- plan_data[[2]][2]
+plan_data     <- readxl::read_excel("PLANNER_DATA.xlsx")
+plan_name     <- "Planner Name" # Change this, or use colnames(plan_data[[2]][2]) 
+plan_date     <- plan_data[[2]][2]
 filtered_data <- setNames(plan_data, plan_data[4, ])
 filtered_data <- filtered_data[-c(1,2,3,4), ]
 # You can filter Buckets/Tasks out by using dplyr::filter()
@@ -59,13 +61,13 @@ filtered_data <- filtered_data[-c(1,2,3,4), ]
 #         `Bucket Name` != "Bucket 1",
 #         `Task Name` != "Task 1"
 #    )
-```
+{{< /code >}}
 
 Now, we have a sub-dataset that is purely the buckets/tasks of our planner: `filtered_data`.
 
 Using this sub-dataset, we can pull out the information about the checklist tasks:
 
-```r
+{{< code language="r" expand="Show" collapse="Hide" isCollapsed="false" >}}
 plan_completed_tasks <- stringr::str_sub(
         sub("\\/.*", "", as.data.frame(filtered_data[15])[[1]]),
         start = 1
@@ -78,7 +80,7 @@ plan_total_tasks <- sub(".*\\/", "", as.data.frame(filtered_data[15])[[1]]) %>%
     sum(na.rm = TRUE)
 
 plan_notstarted_tasks <- plan_total_tasks - plan_completed_tasks
-```
+{{< /code >}}
 
 The above snippet essentially does some filtering using *regular expression* and separates the fraction in the *Completed Checklist Items* column to find the **completed** and **incompleted** checklist tasks.
 
@@ -88,7 +90,7 @@ For the plots, I'm going to be using *donut* charts, as I think they look pretty
 
 First, we need to create a data frame for our plot data using the task variables we found:
 
-```r
+{{< code language="r" expand="Show" collapse="Hide" isCollapsed="false" >}}
 plot_data <- data.frame(
     category = c("Not Started", "Completed"),
     task_data = c(
@@ -96,41 +98,45 @@ plot_data <- data.frame(
         plan_completed_tasks
     )
 )
-```
+{{< /code >}}
 
 Then, we need to create columns of percentages and some other plotting data:
 
-```r
+{{< code language="r" expand="Show" collapse="Hide" isCollapsed="false" >}}
 plot_data$fraction <- plot_data$task_data / sum(plot_data$task_data)
-plot_data <- plot_data[order(plot_data$fraction), ]
-plot_data$ymax <- cumsum(plot_data$fraction)
-plot_data$ymin <- c(0, head(plot_data$ymax, n = -1))
-```
+plot_data          <- plot_data[order(plot_data$fraction), ]
+plot_data$ymax     <- cumsum(plot_data$fraction)
+plot_data$ymin     <- c(0, head(plot_data$ymax, n = -1))
+{{< /code >}}
 
 Now, all we need to do is use `ggplot2` to plot this:
 
-```r
+{{< code language="r" expand="Show" collapse="Hide" isCollapsed="false" >}}
 ggplot(
     plot_data,
-    aes(
-        ymax = ymax,
-        ymin = ymin,
-        xmax = 4,
-        xmin = 3,
-        fill = category
-    )
+    aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = category)
 ) +
 geom_rect() +
 coord_polar(theta = "y") +
 xlim(c(0, 4)) +
 theme_void() +
 labs(
-    title = paste0(plan_name, " - (", plan_completed_tasks, "/", plan_total_tasks, " Tasks Complete)"),
+    title = paste0(
+        plan_name,
+        " - (",
+        plan_completed_tasks,
+        "/",
+        plan_total_tasks,
+        " Tasks Complete)"
+    ),
     subtitle = paste0("Exported on ", plan_date),
     fill = "Status",
     caption = paste0(
         "Project is ",
-        format(round((plan_completed_tasks / plan_total_tasks) * 100, 2), nsmall = 2),
+        format(
+            round((plan_completed_tasks / plan_total_tasks) * 100, 2),
+            nsmall = 2
+        ),
         "% complete"
     )
 ) +
@@ -139,8 +145,8 @@ theme(
     plot.subtitle = element_text(hjust = 0.5, face = "italic", color = "darkgray"),
     plot.caption = element_text(hjust = 0.5, face = "bold", size = 20)
 )
-```
+{{< /code >}}
 
 Then, this will give you a plot like this (my color palette is different, and I had to redact some stuff):
 
-![](/img/content.png)
+{{< image src="/img/content.png" alt="Planner plot" position="center" style="border-radius: 8px; background: #ededed; padding: 10px;" >}}
