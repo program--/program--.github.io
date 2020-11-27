@@ -108,9 +108,16 @@ These two commands with (1) install `renv`, and (2) consent to using it. You'll 
 ... Rscript -e 'renv::restore()' ...
 ```
 
-This tells `renv` to ensure all dependencies are installed in our container based on the `renv.lock` file in our Dash app directory. This should be automatically generated when you install and run `renv` on your local machine.
+This tells `renv` to ensure all dependencies are installed in our container based on the `renv.lock` file in our Dash app directory. This should be automatically generated when you install and run `renv` on your local machine. If you choose *not* to use `renv`, you need ot make sure you install any packages you use, **including Dash**. You can do this by adding:
 
-Then, after `renv` is installed, we need to make sure we grab our Dash app from its repository *(Make sure you actually have the repository created)*.
+{{< code language="docker" expand="Show" collapse="Hide" isCollapsed="false" >}}
+RUN Rscript -e 'install.packages('dash')
+RUN Rscript -e 'install.packages('...')
+{{< /code >}}
+
+to your Dockerfile, where `...` is any other packages your app depends on.
+
+Then, after `renv` is installed or your dependencies are sorted out, we need to make sure we grab our Dash app from its repository *(Make sure you actually have the repository created)*.
 
 In your Dockerfile, we can specify the `WORKDIR` of our app. In mine, I wanted to just clone it into the user's home directory via the `WORKDIR ~` command. Then, we can run the `git clone` command, which downloads our repository to the `~/[Repository Name]` directory. Now, we just need to set our `WORKDIR` in this directory with `WORKDIR [Repository Name]`
 
