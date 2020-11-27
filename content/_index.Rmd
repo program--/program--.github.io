@@ -46,3 +46,5 @@ framed: false
 <div class="menu-container"><a href="https://geog176a.justinsingh.me"><i class="menu-icon fas fa-globe-americas fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i><span class="menu-text">GIS</span></a></div>
 <div class="menu-container"><a href="mailto:justin@justinsingh.me"><i class="menu-icon fas fa-envelope-square fa-5x"></i><span class="menu-text">Contact</span></a></div>
 </div>
+
+<hr/>

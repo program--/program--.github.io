@@ -20,7 +20,8 @@ In this post, I'll run through the general concept of deploying a Dash app hoste
 >
 > Written on top of [`Fiery`](https://github.com/thomasp85/fiery)/[`Flask`](https://flask.palletsprojects.com/en/1.1.x/), [`Plotly.js`](https://plotly.com/javascript/), and [`React.js`](https://reactjs.org/), Dash is ideal for building data visualization apps with highly custom user interfaces in pure `R` or `Python`. It's particularly suited for anyone who works with data.
 >
-> ![](/images/thumbnail_0a718df0-9ce7-11e9-8982-0242ac11004a.png)
+
+{{< image src="/img/thumbnail_0a718df0-9ce7-11e9-8982-0242ac11004a.png" position="center" >}}
 
 *Source: [Introduction to Dash](https://dashr.plotly.com/introduction)*
 
@@ -40,9 +41,14 @@ In this post, I'll run through the general concept of deploying a Dash app hoste
 >
 > Virtual machines (VMs) are an abstraction of physical hardware turning one server into many servers. The hypervisor allows multiple VMs to run on a single machine. Each VM includes a full copy of an operating system, the application, necessary binaries and libraries - taking up tens of GBs. VMs can also be slow to boot.
 >
-> ![](/images/container-vm-whatcontainer_2.png)
->
-> ![](/images/docker-containerized-appliction-blue-border_2.png)
+
+<center>
+
+{{< image src="/img/container-vm-whatcontainer_2.png" position="center" style="width:50%; float: right; margin-right: -35px;">}}
+
+{{< image src="/img/docker-containerized-appliction-blue-border_2.png" position="center" style="width:50%; float: left;">}}
+
+</center>
 
 *Source: [Docker](https://www.docker.com/resources/what-container)*
 
