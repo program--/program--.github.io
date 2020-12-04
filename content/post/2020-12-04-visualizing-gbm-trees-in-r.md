@@ -159,6 +159,6 @@ Essentially, we create a named vector, `pathString`, and append to it depending 
 
 This gives us a tree that looks like:
 
-{{< image src="/img/gbm-tree.png" position="center" style="width:50%; float: right; margin-right: -35px;">}}
+{{< image src="/img/gbm-tree.png" position="center">}}
 
 > Note: this function is primarily for regression modeling. If you are training a classification model, you'll need to adjust the `data.tree::SetEdgeStyle()` and `data.tree::SetNodeStyle()` parameters just slightly by removing `formatC()`. If your model is a mixed model, you can potentially use a vectorized `if else` (either the base package `ifelse()` or `dplyr::if_else()`).
