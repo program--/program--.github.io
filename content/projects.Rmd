@@ -18,6 +18,10 @@ output: html_document
 
 ***
 
+# [COVID-19 Historical Data](https://covid.justinsingh.me)
+
+***
+
 # [R + GIS](https://geog176a.justinsingh.me/geog176a)
 Using libraries from **tidyverse**, **sf**, **and more...**, I performed
 analysis on spatial datasets that covered various topic, such as:

@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "images"
+media_folder: "static/img"
 
 collections:
   - name: "post"
@@ -16,5 +16,4 @@ collections:
         - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
         - {label: "Title", name: "title", widget: "string"} # Title
         - {label: "Date", name: "date", widget: "datetime"} # Date
-        - {label: "External URL", name: "external-url", widget: "string", required: false} # External URL
         - {label: "Body", name: "body", widget: "markdown"}
