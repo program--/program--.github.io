@@ -12,6 +12,9 @@ output: html_document
 - ## [plannr](https://plannr.justinsingh.me)
   A **R** package for interfacing with **Microsoft Planner** data.
 
+- ## [cryptocurr](https://cryptocurr.justinsingh.me)
+  A **R** package API wrapper for various *cryptocurrency* exchange platforms.
+
 </div>
 
 </details>

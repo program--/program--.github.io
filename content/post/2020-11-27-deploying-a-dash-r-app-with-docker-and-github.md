@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Deploying a Dash R App with Docker and GitHub
 date: 2020-11-26T21:59:16.606Z
-external-url: ""
 ---
 If you've stumbled upon this, you're probably trying to find the answer to how to serve a Dash R app over the web. I know that I originally had a hard time when I was working on a [COVID-related app](https://covid.justinsingh.me)... You can also look at [Plotly's tutorial on deploying Dash apps to Heroku](https://dashr.plotly.com/deployment), which is helpful if you don't want to manage your own environment! 
 
