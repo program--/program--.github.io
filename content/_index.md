@@ -44,6 +44,7 @@ framed: true
 </style>
 
 <div class="menu-parent">
+<<<<<<< HEAD
 
 <div class="menu-container">
 <a href="https://github.com/program--">
@@ -82,3 +83,12 @@ framed: true
 </div>
 
 </div>
+=======
+<div class="menu-container"><a href="https://github.com/program--"><i class="menu-icon fab fa-github-square fa-5x"></i><span class="menu-text">GitHub</span></a></div>
+<div class="menu-container"><a href="/assets/jsingh_resume.pdf"><i class="menu-icon far fa-file-alt fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i><span class="menu-text">Resume</span></a></div>
+<div class="menu-container"><a href="https://gis.justinsingh.me"><i class="menu-icon fas fa-globe-americas fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i><span class="menu-text">GIS</span></a></div>
+<div class="menu-container"><a href="mailto:justin@justinsingh.me"><i class="menu-icon fas fa-envelope-square fa-5x"></i><span class="menu-text">Contact</span></a></div>
+</div>
+
+<hr/>
+>>>>>>> 4eb9f03bddc5d2af9ce7bad3da9c8451407b45ad
