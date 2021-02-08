@@ -1,6 +1,6 @@
 ---
 layout: "index"
-framed: false
+framed: true
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -19,19 +19,22 @@ framed: false
     .menu-parent {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         background: repeating-linear-gradient(90deg, #2b2f3b, #2b2f3b 2px, transparent 0, transparent 10px);
         z-index: -1;
         padding: 20px 0 20px 0;
+        text-align: center;
     }
 
     .menu-container {
-        position: inline;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex: 1
+    }
+
+    @media (max-width: 800px) {
+        .menu-parent {
+            flex-direction: column;
+        }
     }
 
     .menu-text {
@@ -41,10 +44,41 @@ framed: false
 </style>
 
 <div class="menu-parent">
-<div class="menu-container"><a href="https://github.com/program--"><i class="menu-icon fab fa-github-square fa-5x"></i><span class="menu-text">GitHub</span></a></div>
-<div class="menu-container"><a href="/assets/jsingh_resume.pdf"><i class="menu-icon far fa-file-alt fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i><span class="menu-text">Resume</span></a></div>
-<div class="menu-container"><a href="https://geog176a.justinsingh.me"><i class="menu-icon fas fa-globe-americas fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i><span class="menu-text">GIS</span></a></div>
-<div class="menu-container"><a href="mailto:justin@justinsingh.me"><i class="menu-icon fas fa-envelope-square fa-5x"></i><span class="menu-text">Contact</span></a></div>
+
+<div class="menu-container">
+<a href="https://github.com/program--">
+<i class="menu-icon fab fa-github-square fa-5x"></i>
+</a>
+<a href="https://github.com/program--">
+<span class="menu-text">GitHub</span>
+</a>
 </div>
 
-<hr/>
+<div class="menu-container">
+<a href="/assets/jsingh_resume.pdf">
+<i class="menu-icon far fa-file-alt fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i>
+</a>
+<a href="/assets/jsingh_resume.pdf">
+<span class="menu-text">Resume</span>
+</a>
+</div>
+
+<div class="menu-container">
+<a href="https://geog176a.justinsingh.me">
+<i class="menu-icon fas fa-globe-americas fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i>
+</a>
+<a href="https://geog176a.justinsingh.me">
+<span class="menu-text">GIS</span>
+</a>
+</div>
+
+<div class="menu-container">
+<a href="mailto:justin@justinsingh.me">
+<i class="menu-icon fas fa-envelope-square fa-5x"></i>
+</a>
+<a href="mailto:justin@justinsingh.me">
+<span class="menu-text">Contact</span>
+</a>
+</div>
+
+</div>

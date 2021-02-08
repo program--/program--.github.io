@@ -6,9 +6,9 @@ title: "Projects"
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: auto auto 2rem auto;
     max-width: 700px;
-    box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 100px -15px rgba(0,0,0,0.5);
 }
 
 .input {
@@ -89,7 +89,7 @@ title: "Projects"
 # [COVID-19 Historical Data](https://covid.justinsingh.me)
 A **Dash-R** web app built to analyze historical COVID-19 data.
 
-# [R + GIS](https://geog176a.justinsingh.me/geog176a)
+# [R + GIS](https://gis.justinsingh.me/gis)
 Using libraries from **tidyverse**, **sf**, **and more...**, I performed
 analysis on spatial datasets that covered various topic, such as:
 
