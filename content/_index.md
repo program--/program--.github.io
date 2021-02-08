@@ -64,10 +64,10 @@ framed: true
 </div>
 
 <div class="menu-container">
-<a href="https://geog176a.justinsingh.me">
+<a href="https://gis.justinsingh.me">
 <i class="menu-icon fas fa-globe-americas fa-5x" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"></i>
 </a>
-<a href="https://geog176a.justinsingh.me">
+<a href="https://gis.justinsingh.me">
 <span class="menu-text">GIS</span>
 </a>
 </div>
