@@ -73,7 +73,7 @@ paginate = 5
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "projects"
-        name = "Projects"
+        name = "Research & Projects"
         url = "/projects"
       [[languages.en.menu.main]]
         identifier = "github"
