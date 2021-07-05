@@ -17,7 +17,7 @@ paginate = 5
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 3
+  showMenuItems = 4
 
   # show selector to switch language
   showLanguageSelector = false
@@ -51,7 +51,7 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Justin Singh"
+    title = "Justin Singh-M."
     subtitle = "Systems Administrator & Developer"
     owner = ""
     keywords = ""
@@ -73,8 +73,12 @@ paginate = 5
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "projects"
-        name = "Research & Projects"
+        name = "Projects"
         url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "research"
+        name = "Research"
+        url = "/research"
       [[languages.en.menu.main]]
         identifier = "github"
         name = "GitHub"

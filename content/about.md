@@ -6,7 +6,7 @@ title: About
 
 {{< image src="/img/profile.png" alt="Me" position="center" style="border-radius: 25%; width:35%; border: 3px solid #78E2A0; padding: 2px;" >}}
 
-I'm a **Network and Systems Administrator** for the *US Air Force Reserves*, and an undergraduate student at the *University of California, Santa Barbara* for **Applied Mathematics** and **Spatial Science**.
+I'm a **Systems Administrator** for the *US Air Force Reserves*, and a graduate student at the *Georgia Institute of Technology* for **Computer Science**.
 
 **View my resume [here](/assets/jsingh_resume.pdf).**
 
@@ -14,7 +14,7 @@ I'm a **Network and Systems Administrator** for the *US Air Force Reserves*, and
 
 ## Research / Interests
 
-**Machine Learning** / **Data Science**: I'm currently working as an undergraduate research assistant under [Mike Johnson](https://mikejohnson51.github.io/) in the UCSB Geography Department, where we are working on computational methods in Hydrology/Water Resources. Within these methods, I am helping develop machine learning models to solve current open problems in this field.
+**Machine Learning** / **Data Science**: I'm currently working under [Dr. Mike Johnson](https://mikejohnson51.github.io/) in the UCSB Geography Department, where we are working on computational methods in Hydrology/Water Resources. Within these methods, I am helping develop machine learning models to solve current open problems in this field.
 
 **Geographic Information Systems**: I'm heavily interested in the field of GIS. Much of my current experience is from the GIS course sequence at UCSB. You can view my project site [here](https://gis.justinsingh.me/).
 
@@ -39,4 +39,3 @@ I also manage various projects within my unit, my primary being an automation pl
 You can see my experience in more detail in my resume. I'm also currently working toward, or already have, the following certifications:
 
 - CompTIA Security+
-- VMware VCP-DCV 2020 *(in-progress)*

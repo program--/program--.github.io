@@ -1,5 +1,5 @@
 ---
-title: "Research & Projects"
+title: "Projects"
 ---
 
 <style>
@@ -65,10 +65,6 @@ title: "Research & Projects"
     filter: drop-shadow(0px 0px 3px black);
 }
 </style>
-
-<center><h2>Publications</h2></center>
-
-> Johnson, J.M., Eyelade D., Clarke K.C, **Singh-Mohudpur, J.** (2021) *“Characterizing Reach-level Empirical Roughness Along the National Hydrography Network: Developing DEM-based Synthetic Rating Curves.”*
 
 <center><h2>R Packages</h2></center>
 
