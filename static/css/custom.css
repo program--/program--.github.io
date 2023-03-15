@@ -1,0 +1,21 @@
+.page__body {
+    display: grid;
+}
+
+.post__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.post__header > h1 {
+    margin-top: unset;
+}
+
+.date {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    color: var(--off-fg);
+    background-color: var(--inner-bg);
+}
