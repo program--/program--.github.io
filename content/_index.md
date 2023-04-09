@@ -7,7 +7,7 @@ headless: true
     <div>
 
 👋 Hi! I'm Justin. I'm a:
-- Data Engineer @ UF-OKN
+- Software Engineer @ Lynker
 - Graduate Student @ Georgia Tech
 - US Air Force Reservist
 
