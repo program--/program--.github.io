@@ -2,11 +2,12 @@
 headless: true
 ---
 
+
 <div class="home">
     <img src="img/me.jpeg" width="300px"/>
     <div>
 
-👋 Hi! I'm Justin. I'm a:
+👋 Hi! I'm [Justin](https://github.com/program--.gpg). I'm a:
 - Software Engineer @ Lynker
 - Graduate Student @ Georgia Tech
 - US Air Force Reservist
@@ -17,6 +18,7 @@ interested in [computational geometry](https://en.wikipedia.org/wiki/Computation
 and [geospatial data management](https://en.wikipedia.org/wiki/Geographic_information_system#Geospatial_data_management).
     </div>
 </div>
+
 
 <style>
     .home {
