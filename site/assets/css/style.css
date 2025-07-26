@@ -1,5 +1,5 @@
 :root {
-    --spacing-1: 1rem;
+    --spacing-1: 2vmin;
     --spacing-2: calc(var(--spacing-1) * 2);
 }
 
@@ -30,6 +30,7 @@ body {
     margin-top: var(--spacing-2);
     margin-bottom: var(--spacing-2);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 4vmin;
 }
 
 body>header {
@@ -38,10 +39,12 @@ body>header {
     gap: var(--spacing-2);
 }
 
+
 body>header>img {
     width: 20%;
     border-radius: 100%;
     border: 1px solid oklch(from black l c h / 10%);
+    min-width: 100px;
 }
 
 body>header>div {
@@ -72,4 +75,29 @@ body>main>article {
 body>main>aside {
     padding-left: var(--spacing-2);
     border-left: 1px solid oklch(from black l c h / 10%);
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 80%;
+    }
+
+    body>header {
+        flex-direction: column;
+    }
+
+    body>header>img {
+        min-width: 50px;
+    }
+
+    body>header>div {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body>header>div>nav>ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
