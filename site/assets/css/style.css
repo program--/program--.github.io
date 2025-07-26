@@ -8,6 +8,14 @@ h2 {
     margin: unset;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section>h2 {
     margin-top: var(--spacing-1);
     margin-bottom: var(--spacing-1);
