@@ -30,7 +30,7 @@ body {
     margin-top: var(--spacing-2);
     margin-bottom: var(--spacing-2);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 4vmin;
+    font-size: 2vmin;
 }
 
 body>header {
@@ -75,6 +75,12 @@ body>main>article {
 body>main>aside {
     padding-left: var(--spacing-2);
     border-left: 1px solid oklch(from black l c h / 10%);
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 3vmin;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
